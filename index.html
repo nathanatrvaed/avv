@@ -185,6 +185,7 @@
       gtag('config', 'UA-143895465-2');
       var urlParams = new URLSearchParams( window.location.search ).forEach( function( value, key ) {
         if ( key === 'id' ) {
+          console.log( key, value )
           gtag( 'set', { 'user_id': value } );
         }
       } );
